@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,500;0,700;1,200;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>CoachHer</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>Browse</li>
+        <li><a href="../auth/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- profile pic goes here -->
+    <section class="profilePic">
+      <h1>Profile</h1>
+      <form action="/profilePic" method="POST" enctype="multipart/form-data">
+        <input class="postImage" type="file" name="file-to-upload" placeholder="Upload Image" multiple>
+        <button type="submit">Add Photo</button>
+      </form>
+    </section>
+
+    <section class="profileDisplay">
+      <section>
+        <p>Off/On Season</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </section>
+      <section>
+        <p>display coach profile if there is one, display list of available if not</p>
+      </section>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="copy"> Copyright © 2021 CoachHer.All rights reserved.</p>
+  </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
