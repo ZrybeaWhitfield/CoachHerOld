@@ -16,7 +16,7 @@ const coachRoutes     = require("./routes/coachProfile")
 
 //added for push attempt
 
-require("dotenv").config({path: "../config/.env"})
+require("dotenv").config({path: "./config/.env"})
 
 //passport config
 require("./config/passport")(passport)
