@@ -14,6 +14,7 @@ const homeRoutes      = require("./routes/home")
 const athleteRoutes   = require("./routes/athleteProfile")
 const coachRoutes     = require("./routes/coachProfile")
 
+//added for push attempt
 
 require("dotenv").config({path: "./config/.env"})
 
