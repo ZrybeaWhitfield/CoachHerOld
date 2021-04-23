@@ -31,7 +31,7 @@ router.get('/openid/return',
     )(req, res, next);
   },
   function(req, res) {
-    console.log('We received a return from AzureAD.');
+    console.log('We received a GET return from AzureAD.');
     res.redirect('/athleteProfile');//this will be profile not todos
   });
 
@@ -46,7 +46,7 @@ router.post('/openid/return',
     )(req, res, next);
   },
   function(req, res) {
-    console.log('We received a return from AzureAD.');
+    console.log('We received a return POST from AzureAD.');
     res.redirect('/athleteProfile');
   });
 
